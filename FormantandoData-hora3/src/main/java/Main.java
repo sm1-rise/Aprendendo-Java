@@ -13,13 +13,12 @@ public class Main {
 
         LocalDate r1 = LocalDate.ofInstant(d06, ZoneId.systemDefault());
         LocalDate r2 = LocalDate.ofInstant(d06, ZoneId.of("Portugal"));
-        LocalDateTime r3 = LocalDateTime.ofInstant(d06,ZoneId.systemDefault());
-        LocalDateTime r4 = LocalDateTime.ofInstant(d06,ZoneId.of("Portugal"));
+        LocalDateTime r3 = LocalDateTime.ofInstant(d06, ZoneId.systemDefault());
+        LocalDateTime r4 = LocalDateTime.ofInstant(d06, ZoneId.of("Portugal"));
 
         System.out.println(r1);
         System.out.println(r2);
         System.out.println(r3);
-        System.out.println(r4 );
+        System.out.println(r4);
     }
-    
 }
