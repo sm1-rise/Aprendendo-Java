@@ -1,9 +1,12 @@
 import java.util.Date;
+import java.util.LinkedList;
 
 public class HourContract {
     private Date date;
     private double valuePerHour;
     private int hours;
+
+
 
    public HourContract (Date data, double valuePerHour, int hours){
        super();
@@ -11,6 +14,7 @@ public class HourContract {
        this.valuePerHour = valuePerHour;
        this.hours = hours;
    }
+
 
    public double totalValue(){
        double totalValue;
@@ -41,9 +45,6 @@ public class HourContract {
     public void setHours(int hours) {
         this.hours = hours;
     }
-
-
-
 
 
 }

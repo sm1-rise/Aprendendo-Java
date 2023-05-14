@@ -1,6 +1,9 @@
 public class Departament {
+
     String name;
 
+
+    public Departament(){}
     public Departament (String name){
         super();
         this.name = name;
