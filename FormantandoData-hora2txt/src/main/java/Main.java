@@ -7,9 +7,10 @@ import java.time.format.DateTimeFormatter;
 public class Main {
     public static void main(String[] args) {
         LocalDate d1 = LocalDate.parse("2022-04-04");
-        LocalDateTime d2 = LocalDateTime.parse("2022-07-01T04:30:16");
-        Instant d3 = Instant.parse("2022-04-05T04:30:15Z");
+        LocalDateTime d2 = LocalDateTime.parse("2022-07-01T04:30:16-3");
+        Instant d3 = Instant.now().
 
+        Instant
         System.out.println(d1);
         System.out.println(d2);
         System.out.println(d3);
