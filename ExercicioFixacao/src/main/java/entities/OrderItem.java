@@ -17,7 +17,7 @@ public class OrderItem {
 
 
     public double subTotal(int quantity, double price){
-        double sum = 0;
+        double sum;
         sum = quantity * price;
         return sum;
     }
@@ -38,12 +38,11 @@ public class OrderItem {
         this.price = price;
     }
 
+
     @Override
     public String toString() {
-        return "OrderItem{" +
-                "quantity=" + quantity +
-                ", price=" + price +
-                '}';
+        return product.getName() + ", " + getPrice() + "," + " Quantity: " + quantity + " Subtotal = $" + subTotal(quantity, product.getPrice()) + "\n";
+
     }
 
 }

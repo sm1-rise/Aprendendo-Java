@@ -1,5 +1,7 @@
 package entities;
 
+import enums.OrderStatus;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -27,11 +29,11 @@ public class Order {
         this.moment = moment;
     }
 
-    public entities.OrderStatus getStatus() {
+    public OrderStatus getStatus() {
         return status;
     }
 
-    public void setStatus(entities.OrderStatus status) {
+    public void setStatus(OrderStatus status) {
         this.status = status;
     }
 
@@ -62,14 +64,15 @@ public class Order {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Order moment: " + moment);
-        sb.append("Order status: " + status);
-        sb.append(client);
-        sb.append("Order items: ");
-        for (OrderItem e : orderItens) {
-            sb.append(orderItens + "\n");
+        sb.append("Order moment: " + moment + "\n");
+        sb.append("Order status: " + status + "\n");
+        sb.append(client + "\n");
+        sb.append("Order items: " + "\n");
+        for (OrderItem e : orderItens ) {
+            sb.append(e.toString());
         }
-        sb.append("Total Price: $" + total());
+        sb.append("Total Price: $");
+        sb.append(total() + "\n");
 
 
         return sb.toString();
