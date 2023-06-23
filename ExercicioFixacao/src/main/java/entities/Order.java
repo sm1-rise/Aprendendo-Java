@@ -74,7 +74,6 @@ public class Order {
         sb.append("Total Price: $");
         sb.append(total() + "\n");
 
-
         return sb.toString();
         }
 
